@@ -12,6 +12,8 @@
     <div id="links">
       <a href="./Perseverance-Gallery/">Perseverence Gallery</a>
     </div>
+    <div id="quote">      
+    </div>
   </div>
   <p class="hidden">for you,<br> by sqbi-q.</p>
 <body>
@@ -25,12 +27,16 @@ body{
   width: 100%;
   height: 100%;
   display: flex;
+  flex-flow: column;
   justify-content: center;
 }
 #links{
   min-width: 90%;
   text-align: center;
   border: 5px solid white;
+}
+#quote{
+  color: white;
 }
 a{
   font-size: 5vw;
@@ -57,7 +63,38 @@ p{
 .hidden:hover{
   color: white;
 }
-
 </style>
+
+
+<script>
+var getJSON = function(url, callback) {
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', url, true);
+	xhr.responseType = 'json';
+	xhr.onload = function() {
+      		var status = xhr.status;
+      		if (status === 200) {
+        		callback(null, xhr.response);
+		} else {
+        		callback(status, xhr.response);
+      		}
+	};
+	xhr.send();
+};
+
+//show quote
+getJSON('http://api.quotable.io/random', function(err, data){
+  if (err !== null){
+    console.log("Cannot load quote! ",err);
+  }else{
+    var p = document.createElement('p');
+    p.innerText = `"${data.content}"`;
+    p.innerHTML += `<br>${data.author}`;
+    var quote_container = document.getElementById('quote');
+    quote_container.appendChild(p);
+  }
+});
+//
+</script>
 
 <html>
