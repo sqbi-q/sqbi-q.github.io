@@ -83,7 +83,7 @@ var getJSON = function(url, callback) {
 };
 
 //show quote
-getJSON('http://api.quotable.io/random', function(err, data){
+getJSON('https://api.quotable.io/random', function(err, data){
   if (err !== null){
     console.log("Cannot load quote! ",err);
   }else{
