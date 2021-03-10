@@ -1,3 +1,6 @@
 [submodule "Perseverance-Gallery"]
 	path = Perseverance-Gallery
 	url = https://github.com/sqbi-q/Perseverance-Gallery
+[submodule "responsive"]
+	path = responsive
+	url = https://github.com/sqbi-q/responsive
