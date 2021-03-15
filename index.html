@@ -7,66 +7,75 @@
   <meta content="#43B581" data-react-helmet="true" name="theme-color">
 </head>
 
-<body style="background-color: black; color:black">
+<body>
   <div id="container">
-    <div id="links">
-      <a href="./Perseverance-Gallery/">Perseverence Gallery</a>
-    </div>
-    <div id="quote">      
-    </div>
+    <h1>Index of sqbi-q.github.io:</h1>
+    <ul>
+      <li>
+        <h2>Websites:</h2>
+        <table>
+          <tr>
+            <th>File</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><a href="./Perseverance-Gallery/">.Perseverence Gallery/</a></td>
+            <td>Photos from Perseverance rover.</td>
+          </tr>
+          <tr>
+            <td><a href="./responsive/">.responsive/</a></td>
+            <td>Website testing responsive web design.</td>
+          </tr>
+        </table>
+      </li>
+      <li>
+        <div class="column">
+          <h2>Links:</h2>
+          <a href="https://www.youtube.com/watch?v=RNAdRBGYzI4">Jeszcze Nie Mamy Na Was Pomysłu</a>
+          <a href="https://youtu.be/kqx_cZN9ag8">Furia w Śnialni</a>
+          <a href="https://youtu.be/e6rnXQXrAwI">Marynistyka Suchego Lądu</a>
+          <a href="https://youtu.be/ZCE9iMebyK4">Hidden In the Sand</a>
+          <a href="https://youtu.be/hh1WeQxfCX0">Can I Call You Tonight?</a>
+          <a href="https://youtu.be/c1GxjzHm5us">Blue Monday</a>
+        </div>
+      </li>
+      <li>
+        <h2>Funny thing:</h2>
+        <a href="carp.png"><img src="carp.jpg"></a>
+      </li>
+    </ul>
   </div>
-  <p class="hidden">for you,<br> by sqbi-q.</p>
+  </div>
 <body>
 
 <style>
 body{
-  padding: 0;
-  margin: 0;
+  background-color: black;
+  color: white;
 }
 #container{
+  width: 75%;
+  margin: auto auto;
+  padding-top: 20px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
   width: 100%;
-  height: 100%;
-  display: flex;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.column{
+  display:flex;
   flex-flow: column;
-  justify-content: center;
-}
-#links{
-  min-width: 90%;
-  text-align: center;
-  border: 5px solid white;
-}
-#quote{
-  color: white;
-}
-a{
-  font-size: 5vw;
-}
-a:link, a:visited {
-  color: rgb(163, 163, 163);
-}
-a:hover {
-  color: white;
-}
-a:active {
-  color: yellow;
-}
-
-p{
-  font-size: 1vw;
-}
-.hidden{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  color: inherit;
-}
-.hidden:hover{
-  color: white;
 }
 </style>
 
 
-<script>
+<!-- <script>
 var getJSON = function(url, callback) {
 	var xhr = new XMLHttpRequest();
 	xhr.open('GET', url, true);
@@ -95,6 +104,6 @@ getJSON('https://api.quotable.io/random', function(err, data){
   }
 });
 //
-</script>
+</script> -->
 
 <html>
