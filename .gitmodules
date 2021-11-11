@@ -7,3 +7,6 @@
 [submodule "gdautotile-tool"]
 	path = gdautotile-tool
 	url = https://github.com/sqbi-q/gdautotile-tool
+[submodule "Abscissa"]
+	path = Abscissa
+	url = git@github.com:sqbi-q/Abscissa.git
