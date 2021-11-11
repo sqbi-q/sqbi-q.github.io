@@ -1,2 +1,2 @@
 # sqbi-q.github.io
-My website!
+My website! It is very cool!
